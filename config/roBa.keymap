@@ -38,56 +38,6 @@
         };
     };
 
-    macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_CONTROL &kp PLUS>;
-
-            label = "TO_LAYER_0";
-        };
-
-        new_macrominus: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_CONTROL &kp MINUS>;
-
-            label = "NEW_MACRO";
-        };
-
-        new_macroup: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_CONTROL &kp PAGE_UP>;
-
-            label = "NEW_MACRO";
-        };
-
-        new_macrodown: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_CONTROL &kp PAGE_DOWN>;
-
-            label = "NEW_MACRO";
-        };
-
-        new_macroleft: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_ALT &kp LEFT>;
-
-            label = "NEW_MACRO";
-        };
-
-        new_macroright: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_ALT &kp RIGHT>;
-
-            label = "NEW_MACRO";
-        };
-    };
-
     behaviors {
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
@@ -115,19 +65,19 @@
 
         FUNCTION {
             bindings = <
-&kp F1            &kp F2        &kp F3        &kp F4  &kp F5                              &kp F6  &kp F7    &kp F8        &kp F9     &kp F12
-&trans            &trans        &trans        &trans  &trans  &kp TAB             &trans  &trans  &trans    &kp UP_ARROW  &trans     &trans
-&kp LEFT_SHIFT    &trans        &trans        &trans  &trans  &kp LEFT_SHIFT      &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-&kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &trans  &trans  &trans              &trans  &trans                                     &trans
+&kp F1            &kp F2        &kp F3        &kp F4    &kp F5                                 &kp F6  &kp F7    &kp F8        &kp F9     &kp F12
+&trans            &trans        &trans        &trans    &trans     &kp TAB             &trans  &trans  &trans    &kp UP_ARROW  &trans     &trans
+&kp LEFT_SHIFT    &trans        &trans        &trans    &trans     &kp LEFT_SHIFT      &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+&kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &mkp MB1  &kp SPACE  &trans              &trans  &trans                                     &trans
             >;
         };
 
         NUM {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                              &kp N7        &kp N8        &kp N9        &kp SLASH     &kp MINUS
-&trans  &trans  &trans  &trans  &trans  &trans      &kp KP_NUMLOCK  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &kp PLUS
-&trans  &trans  &trans  &trans  &trans  &trans      &kp N0          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans          &trans                                                  &trans
+&trans            &trans        &trans        &trans    &trans                                 &kp N7        &kp N8        &kp N9        &kp SLASH     &kp MINUS
+&trans            &trans        &trans        &trans    &trans     &trans      &kp KP_NUMLOCK  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &kp PLUS
+&kp LEFT_SHIFT    &trans        &trans        &trans    &trans     &trans      &kp N0          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans
+&kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &mkp MB1  &kp SPACE  &trans      &trans          &trans                                                  &trans
             >;
         };
 
@@ -153,10 +103,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &kp AT_SIGN    &kp LEFT_BRACKET
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp SEMICOLON  &kp RIGHT_BRACKET
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp COLON      &kp BACKSLASH
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                 &kp UNDERSCORE
+&trans            &trans        &trans        &trans    &trans                         &trans  &trans  &trans  &kp AT_SIGN    &kp LEFT_BRACKET
+&trans            &trans        &trans        &trans    &trans     &trans      &trans  &trans  &trans  &trans  &kp SEMICOLON  &kp RIGHT_BRACKET
+&kp LEFT_SHIFT    &trans        &trans        &trans    &trans     &trans      &trans  &trans  &trans  &trans  &kp COLON      &kp BACKSLASH
+&kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &mkp MB1  &kp SPACE  &trans      &trans  &trans                                 &kp UNDERSCORE
             >;
         };
 
