@@ -42,9 +42,49 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp MACRO_PLACEHOLDER>;
+            bindings = <&macro_press>, <&kp LEFT_CONTROL &kp PLUS>;
 
             label = "TO_LAYER_0";
+        };
+
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LEFT_CONTROL &kp MINUS>;
+
+            label = "NEW_MACRO";
+        };
+
+        new_macroup: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LEFT_CONTROL &kp PAGE_UP>;
+
+            label = "NEW_MACRO";
+        };
+
+        new_macrodown: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LEFT_CONTROL &kp PAGE_DOWN>;
+
+            label = "NEW_MACRO";
+        };
+
+        new_macroleft: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LEFT_ALT &kp LEFT>;
+
+            label = "NEW_MACRO";
+        };
+
+        new_macroright: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LEFT_ALT &kp RIGHT>;
+
+            label = "NEW_MACRO";
         };
     };
 
@@ -75,10 +115,10 @@
 
         FUNCTION {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5                      &kp F6  &kp F7    &kp F8        &kp F9     &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &kp UP_ARROW  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                     &trans
+&kp F1          &kp F2           &kp F3  &kp F4          &kp F5                                 &kp F6  &kp F7    &kp F8        &kp F9     &kp F12
+&trans          &trans           &trans  &trans          &trans        &new_macro       &trans  &trans  &trans    &kp UP_ARROW  &trans     &trans
+&new_macroleft  &new_macroright  &trans  &new_macrodown  &new_macroup  &to_layer_0      &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+&trans          &trans           &trans  &trans          &trans        &trans           &trans  &trans                                     &trans
             >;
         };
 
