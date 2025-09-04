@@ -29,10 +29,10 @@
 
         NUM {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                               &kp N7        &kp N8        &kp N9        &kp KP_SLASH  &kp MINUS
-&kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans      &kp KP_NUMLOCK  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp STAR      &kp CARET
-&kp F11  &kp F12  &trans  &trans  &trans   &trans      &kp N0          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans
-&trans   &trans   &trans  &trans  &trans   &trans      &trans          &trans                                                  &trans
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                         &kp N7        &kp N8        &kp N9        &kp KP_SLASH     &kp MINUS
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans      &kp CAPS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_ASTERISK  &kp KP_PLUS
+&kp F11  &kp F12  &trans  &trans  &trans   &trans      &kp N0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD       &trans
+&trans   &trans   &trans  &trans  &trans   &trans      &trans    &trans                                                     &trans
             >;
         };
 
@@ -61,7 +61,7 @@
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp SEMICOLON      &kp BACKSLASH
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp SEMI           &kp BACKSLASH
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                     &kp KP_EQUAL
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                     &kp BSLH
             >;
         };
 
