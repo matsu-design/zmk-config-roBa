@@ -58,10 +58,10 @@
 
         SCROLL {
             bindings = <
-&kp RIGHT_PARENTHESIS  &kp UNDER         &kp LEFT_BRACE   &kp NON_US_HASH  &kp COLON                             &trans  &trans  &trans  &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET
-&kp RPAR               &kp EQUAL         &kp RIGHT_BRACE  &kp NUHS         &kp SINGLE_QUOTE  &trans      &trans  &trans  &trans  &trans  &kp SEMICOLON      &kp BACKSLASH
-&kp RIGHT_PARENTHESIS  &kp PLUS          &kp BACKSLASH    &kp TILDE2       &kp SQT           &trans      &trans  &trans  &trans  &trans  &kp SEMI           &kp BACKSLASH
-&kp UNDERSCORE         &kp LEFT_BRACKET  &kp PIPE         &trans           &trans            &trans      &trans  &trans                                     &kp BSLH
+&kp RIGHT_PARENTHESIS  &kp UNDER         &kp LEFT_BRACE   &kp NON_US_HASH  &kp COLON                             &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp RPAR               &kp EQUAL         &kp RIGHT_BRACE  &kp NUHS         &kp SINGLE_QUOTE  &trans      &trans  &trans  &trans  &trans  &kp SEMICOLON     &kp BACKSLASH
+&kp RIGHT_PARENTHESIS  &kp PLUS          &kp BACKSLASH    &kp TILDE2       &kp SQT           &trans      &trans  &trans  &trans  &trans  &kp SINGLE_QUOTE  &kp ASTRK
+&kp UNDERSCORE         &kp LEFT_BRACKET  &kp PIPE         &trans           &trans            &trans      &trans  &trans                                    &kp LEFT_PARENTHESIS
             >;
         };
 
