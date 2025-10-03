@@ -41,6 +41,13 @@
             bindings = <&kp LA(RIGHT)>;
             label = "GO";
         };
+
+        task: task {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RG(TAB)>;
+            label = "TASK";
+        };
     };
 
     keymap {
@@ -59,7 +66,7 @@
             bindings = <
 &trans    &kp UP_ARROW  &trans     &trans  &trans                      &trans  &trans  &trans          &trans        &trans
 &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans  &trans      &trans  &trans  &trans  &trans          &kp UP_ARROW  &trans
-&back     &go           &taskview  &left   &right  &trans      &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT
+&back     &go           &task      &left   &right  &trans      &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT
 &trans    &trans        &trans     &trans  &trans  &trans      &trans  &trans                                        &trans
             >;
         };
