@@ -10,35 +10,36 @@
         right: right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_CONTROL &kp PAGE_DOWN>;
+            bindings = <&kp LC(PAGE_DOWN)>;
             label = "RIGHT";
         };
 
         left: left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp PAGE_UP>;
+            bindings = <&kp LC(PAGE_UP)>;
             label = "LEFT";
         };
 
         taskview: taskview {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_WIN &kp TAB>;
+            bindings = <&macro_press>, <&kp LEFT_WIN &kp TAB>;
+
             label = "TASKVIEW";
         };
 
         back: back {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp LEFT>;
+            bindings = <&kp LA(LEFT)>;
             label = "BACK";
         };
 
         go: go {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp RIGHT>;
+            bindings = <&kp LA(RIGHT)>;
             label = "GO";
         };
     };
